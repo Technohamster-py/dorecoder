@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Доставка</title>
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/delivery.css' %}" media="screen">
+{% endblock %}
+
+{% block SignIn %}
+        {{ user.login|default:"Регистрация/вход" }}
+{% endblock %}
+
+{% block cart %} {{ cart_count|default:"0" }} {% endblock %}
+
+{% block content %}
+    <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-4b43">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-tab-links-align-justify u-tabs u-tabs-1">
+          <ul class="u-border-2 u-border-grey-75 u-spacing-5 u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item u-tab-item-1" role="presentation">
+              <a class="active u-active-white u-button-style u-hover-palette-1-light-3 u-palette-1-light-2 u-tab-link u-tab-link-1" id="tab-7fce" href="#link-tab-7fce" role="tab" aria-controls="link-tab-7fce" aria-selected="true">Самовывоз<br>
+              </a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-white u-button-style u-hover-palette-1-light-3 u-palette-1-light-2 u-tab-link u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">Пункты выдачи</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-white u-button-style u-hover-palette-1-light-3 u-palette-1-light-2 u-tab-link u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">Почта России</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-white u-button-style u-hover-palette-1-light-3 u-palette-1-light-2 u-tab-link u-tab-link-4" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="false">Курьер</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-align-left u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="link-tab-7fce" role="tabpanel" aria-labelledby="tab-7fce">
+              <div class="u-container-layout u-valign-top u-container-layout-1">
+                <h3 class="u-text u-text-default u-text-1">Самовывоз со склада или из офиса</h3>
+                <p class="u-text u-text-default u-text-2">Вы можете забрать свой заказ в нашем офисе или на оптовом складе</p>
+                <div class="u-grey-light-2 u-map u-map-1">
+                  <div class="embed-responsive">
+                    <iframe class="embed-responsive-item" src="//maps.google.com/maps?output=embed&amp;q=Khimki%2C%20Moskow&amp;z=12&amp;t=m" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyS2hpbWtpJTJDJTIwTW9za293JTIyJTJDJTIyem9vbSUyMiUzQTEyJTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlN0Q="></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+              <div class="u-container-layout u-valign-top u-container-layout-2">
+                <h3 class="u-text u-text-default u-text-3">Пункты выдачи заказов и постоматы</h3>
+                <p class="u-text u-text-default u-text-4"> Для получения наших товаров, мы предлагаем вам воспользоваться более чем 30000 пунктами выдачи заказов во всех регионах России.<br>
+                </p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
+              <div class="u-container-layout u-valign-top u-container-layout-3">
+                <h3 class="u-text u-text-default u-text-5">Доставка "Почтой России"</h3>
+                <p class="u-text u-text-default u-text-6"> Доставка по России в производится по тарифам на почтовую пересылку&nbsp;АО «Почта России».&nbsp;Контрольные сроки доставки и стоимость пересылки вы можете уточнить&nbsp;<a href="https://www.pochta.ru/parcels" class="link u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">на сайте&nbsp;«Почта России»</a>&nbsp;или у нашего чат-бота
+                </p>
+                <p class="u-text u-text-default u-text-7"> Все необходимые финансовые документы вкладываются в отправление. Почтовая доставка осуществляется только по территории Российской Федерации.</p>
+                <p class="u-text u-text-default u-text-8"> Данный способ доставки имеет ограничения по весу до 15&nbsp;кг, сумма трёх сторон посылки не должна превышать 120&nbsp;см, а длина одной из сторон не более 60&nbsp;см.</p>
+                <p class="u-text u-text-9"> Возможны другие ограничения введённые компанией&nbsp;АО «Почта России», касающиеся транспортировки опасных грузов: аккумуляторы, жидкие и прочие химические реактивы в аэрозолях и бутылках, сжатый газ под давлением (подробности уточняйте у менеджеров).</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-4" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+              <div class="u-container-layout u-container-layout-4">
+                <p class="u-text u-text-default u-text-10">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <ul class="u-text u-text-default u-text-11">
+                  <li>
+                    <div class="class u-list-icon"></div>excepteur sint occaecat cupidatat non 
+                  </li>
+                  <li>
+                    <div class="class u-list-icon"></div>sunt in culpa qui officia deserunt 
+                  </li>
+                  <li>
+                    <div class="class u-list-icon"></div>ut enim ad minim veniam 
+                  </li>
+                  <li>
+                    <div class="class u-list-icon"></div>quis nostrud exercitation ullamco 
+                  </li>
+                  <li>
+                    <div class="class u-list-icon"></div>laboris nisi ut aliquip ex ea commodo 
+                  </li>
+                  <li>
+                    <div class="class u-list-icon"></div>duis aute irure dolor in reprehenderit in 
+                  </li>
+                  <li>
+                    <div class="class u-list-icon"></div>voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

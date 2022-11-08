@@ -1,0 +1,242 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/Главная.css' %}" media="screen">
+{% endblock %}
+
+{% block SignIn %}
+    {% if user %}
+        {{ user.login }}
+    {% else %}
+        Регистрация/Вход
+    {% endif %}
+{% endblock %}
+
+{% block cart %} {{ cart_count }} {% endblock %}
+
+{% block content %}
+    <section class="u-clearfix u-lightbox u-section-1" id="sec-5cf5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-carousel u-expanded-width u-gallery u-layout-thumbnails u-lightbox u-no-transition u-show-text-always u-gallery-1" data-interval="5000" data-u-ride="carousel" id="carousel-128d">
+          <div class="u-carousel-inner u-gallery-inner" role="listbox">
+            <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="{% static 'images/default-image-3.jpg' %}">
+              </div>
+              <div class="u-over-slide u-over-slide-1">
+                <h3 class="u-gallery-heading">Пример заголовка</h3>
+                <p class="u-gallery-text">Пример текста</p>
+              </div>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-2">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="{%  static 'images/default-image-3.jpg' %}">
+              </div>
+              <div class="u-over-slide u-over-slide-2">
+                <h3 class="u-gallery-heading">Пример заголовка</h3>
+                <p class="u-gallery-text">Пример текста</p>
+              </div>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-3">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="{%  static 'images/default-image-3.jpg' %}">
+              </div>
+              <div class="u-over-slide u-over-slide-3">
+                <h3 class="u-gallery-heading">Пример заголовка</h3>
+                <p class="u-gallery-text">Пример текста</p>
+              </div>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-4">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="{%  static 'images/default-image-3.jpg' %}">
+              </div>
+              <div class="u-over-slide u-over-slide-4">
+                <h3 class="u-gallery-heading">Пример заголовка</h3>
+                <p class="u-gallery-text">Пример текста</p>
+              </div>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-5">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="{%  static 'images/default-image-3.jpg' %}">
+              </div>
+              <div class="u-over-slide u-over-slide-5">
+                <h3 class="u-gallery-heading">Пример заголовка</h3>
+                <p class="u-gallery-text">Пример текста</p>
+              </div>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-6">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="{%  static 'images/default-image-3.jpg' %}">
+              </div>
+              <div class="u-over-slide u-over-slide-6">
+                <h3 class="u-gallery-heading">Пример заголовка</h3>
+                <p class="u-gallery-text">Пример текста</p>
+              </div>
+            </div>
+          </div>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-128d" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-128d" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+          <ol class="u-carousel-thumbnails u-hidden-md u-hidden-xs u-spacing-30 u-carousel-thumbnails-1">
+            <li class="u-active u-carousel-thumbnail u-carousel-thumbnail-1" data-u-target="#carousel-128d" data-u-slide-to="0">
+              <img class="u-carousel-thumbnail-image u-image" src="{%  static 'images/default-image-3.jpg' %}">
+            </li>
+            <li class="u-carousel-thumbnail u-carousel-thumbnail-2" data-u-target="#carousel-128d" data-u-slide-to="1">
+              <img class="u-carousel-thumbnail-image u-image" src="{%  static 'images/default-image-3.jpg' %}">
+            </li>
+            <li class="u-carousel-thumbnail u-carousel-thumbnail-3" data-u-target="#carousel-128d" data-u-slide-to="2">
+              <img class="u-carousel-thumbnail-image u-image" src="{%  static 'images/default-image-3.jpg' %}">
+            </li>
+            <li class="u-carousel-thumbnail u-carousel-thumbnail-4" data-u-target="#carousel-128d" data-u-slide-to="3">
+              <img class="u-carousel-thumbnail-image u-image" src="{%  static 'images/default-image-3.jpg' %}">
+            </li>
+            <li class="u-carousel-thumbnail u-carousel-thumbnail-5" data-u-target="#carousel-128d" data-u-slide-to="4">
+              <img class="u-carousel-thumbnail-image u-image" src="{%  static 'images/default-image-3.jpg' %}">
+            </li>
+            <li class="u-carousel-thumbnail u-carousel-thumbnail-6" data-u-target="#carousel-128d" data-u-slide-to="5">
+              <img class="u-carousel-thumbnail-image u-image" src="{%  static 'images/default-image-3.jpg' %}">
+            </li>
+          </ol>
+        </div>
+        <p class="u-text u-text-default u-text-1">Пример текста. Кликните, чтобы выбрать элемент "Текст".</p>
+      </div>
+    </section>
+    <section class="u-border-2 u-border-black u-border-no-bottom u-border-no-left u-border-no-right u-clearfix u-palette-1-light-3 u-section-2" id="sec-e699">
+      <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-col">
+                  <div class="u-container-style u-layout-cell u-palette-1-light-2 u-size-60 u-layout-cell-1">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-1">
+                        <a href="/hot"><h2 class="u-align-center u-subtitle u-text u-text-default u-text-1">Хиты продаж</h2></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-col">
+                  <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-2">
+                        <a href="/discount"><h3 class="u-text u-text-default u-text-2">Товары со скидкой</h3></a>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-palette-1-light-3 u-size-30 u-layout-cell-3">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-3">
+                        <a href="/markdown"><h3 class="u-align-center u-text u-text-default u-text-3">Товары с уценкой</h3></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-container-style u-layout-cell u-palette-1-light-2 u-size-60 u-layout-cell-4">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-4">
+                        <a href="/art"><h2 class="u-align-center u-subtitle u-text u-text-default u-text-4">Товары для творчества</h2></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-border-2 u-border-black u-border-no-left u-border-no-right u-clearfix u-section-3" id="sec-2692">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Подпишитесь на новости</h2>
+        <div class="u-form u-form-1">
+          <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px;" source="email">
+            <div class="u-form-group u-form-name u-label-none">
+              <label for="name-ef64" class="u-label">Name</label>
+              <input type="text" placeholder="Ваше имя" id="name-ef64" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-50" required="">
+            </div>
+            <div class="u-form-email u-form-group u-label-none">
+              <label for="email-ef64" class="u-label">Email</label>
+              <input type="email" placeholder="Email" id="email-ef64" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-50" required="">
+            </div>
+            <div class="u-form-group u-form-submit">
+              <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-radius-50">Подписаться</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
+            <div class="u-form-send-error u-form-send-message">#FormSendError</div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="9adfdd88f284196f7399923eb83b6335">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-48b0">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-35 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-text u-text-default u-text-1">Коротко о нас</h2>
+                  <p class="u-text u-text-2">Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                  <a href="" class="u-btn u-btn-round u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-radius-50 u-btn-1">Напишите нам</a>
+                </div>
+              </div>
+              <div class="u-container-style u-image u-image-round u-layout-cell u-radius-50 u-right-cell u-size-25 u-image-1" src="" data-image-width="256" data-image-height="256">
+                <div class="u-container-layout u-container-layout-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-border-2 u-border-black u-border-no-left u-border-no-right u-clearfix u-section-5" id="sec-b29e">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-subtitle u-text u-text-default u-text-1">Наши партнеры</h2>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" data-image-width="500" data-image-height="135" src="data:image/svg+xml;base64,Cgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InBhbmFzb25pYyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgd2lkdGg9IjUwMHB4IiBoZWlnaHQ9IjEzNXB4IiB2aWV3Qm94PSIwIDAgNTAwIDEzNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAwIDEzNSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xMTguOCwxMTguN0g5MS4zbC04LjQtMjAuM0gzNy4ybC03LjcsMjAuM2gtMjdMNDMuOCwxNi40aDI5LjZMMTE4LjgsMTE4Ljd6IE01OC45LDQwLjhsLTE1LDM5LjhoMzEuNUw1OC45LDQwLjh6CgkgTTIxOC41LDE2LjRoMjIuMnYxMDIuM2gtMjUuNVY1NC44bC0yNy42LDMyLjFoLTMuOWwtMjcuNi0zMi4xdjYzLjloLTI1LjVWMTYuNGgyMi4ybDMyLjksMzhMMjE4LjUsMTYuNHogTTMwNS4zLDE2LjQKCWMzNy4zLDAsNTYuNiwyMy4yLDU2LjYsNTEuM2MwLDI5LjQtMTguNiw1MS01OS40LDUxaC00Mi4zVjE2LjRIMzA1LjN6IE0yODUuNiw5OS45aDE2LjZjMjUuNiwwLDMzLjMtMTcuNCwzMy4zLTMyLjQKCWMwLTE3LjYtOS41LTMyLjQtMzMuNi0zMi40aC0xNi4zVjk5Ljl6Ii8+CjxwYXRoIGZpbGw9IiMwMEE2NkUiIGQ9Ik00NjUuMyw0MC42aC01Mi44TDM4MC40LDguNWgxMTcuMXYxMTcuMWwtMzIuMi0zMi4yVjQwLjZ6IE00MTIuNiw5My40VjQ3LjFsLTMzLjEsMzMuMXY0Ni4zaDQ2LjNsMzMuMS0zMy4xCglINDEyLjZ6Ii8+Cjwvc3ZnPgo=">
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-2" data-image-width="500" data-image-height="175" src="data:image/svg+xml;base64,Cgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InNvbnkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI1MDBweCIgaGVpZ2h0PSIxNzVweCIgdmlld0JveD0iMCAwIDUwMCAxNzUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwMCAxNzUiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjMDA4NkNCIiBkPSJNNDQ4LjQsMTE2aDQ5LjF2NDEuM0gzOTlWMTZoNDkuM1YxMTZ6IE0yODcuNSwxMDguMkwyMDYuNCwxNzJsLTc0LjItNTguM2MtMTAuNywyNS43LTM2LjUsNDMuNi02Ni4zLDQzLjYKCUgyLjVWMTZoNjMuNGMzMy4zLDAsNTcuMywyMS4xLDY2LjMsNDMuNmw3NC4yLTU4LjNsMjcuNSwyMS42bC02OCw1My40bDEzLDEwLjJsNjgtNTMuNGwyNy41LDIxLjZsLTY4LDUzLjVsMTMsMTAuM2w2OC01My40VjE2aDQ5LjMKCXYxMDBoNDkuMXY0MS40aC05OC41VjEwOC4yeiBNOTEuNiw4Ni42YzAtMTkuMi0xMi43LTMwLjEtMzAuNi0zMC4xaC0xMXY2MC4xaDEwLjdDNzcuMywxMTYuNyw5MS42LDEwNy42LDkxLjYsODYuNiIvPgo8L3N2Zz4K">
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-3" data-image-width="500" data-image-height="135" src="data:image/svg+xml;base64,Cgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InBoaWxpcHMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI1MDBweCIgaGVpZ2h0PSIxMzVweCIgdmlld0JveD0iMCAwIDUwMCAxMzUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwMCAxMzUiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjMDA1RTRFIiBkPSJNNDg3LjIsMzcuNUw0OTUsNi42Yy02LjYtMS0xNC0xLjgtMTkuOS0xLjZjLTE3LjQsMS4yLTMxLjUsNi44LTQzLjksMjYuMUw0MzYsNy41aC00MC41CgljLTEuMSw1LjgtMi40LDExLjgtMy45LDE4QzM4OC40LDYuOSwzNjAuNywyLjMsMzQxLDMuNGMtNDUuMSwyLjQtOTAuOSwyOS41LTk2LjEsNzkuOGMtMC40LDMuOC0wLjQsNy40LDAuMiwxMC42CgljMC40LDIuNiwxLDUuMSwxLjksNy40Yy0xMC45LDIuOS0yMiw0LjgtMzMuMyw0LjhjLTI2LjEsMC00MC45LTE4LTM0LjEtNDMuNWM1LjItMjAuMywyMi45LTMwLjcsNDIuMy0zMi4xCgljMTIuNC0xLjIsMjQuNywxLjIsMzMuOSwzLjhsMTIuNi0yNC45Yy0xNC4yLTMuNC0yNi45LTQuOC00MC45LTQuOGMtMzQsMC41LTY5LjEsMTUuMy04Mi40LDQ0LjNjMC4zLTIuNywwLjQtNS40LDAuMi04LjIKCWMtMi40LTI4LTI3LjgtMzUuNy02MS41LTM1LjdjLTE4LjEsMC0zNy45LDIuNi01My4yLDcuNmwtNS41LDI1LjNjMTUuOC01LjIsMzEuOS0xMC44LDUxLjQtMTAuOGMyMS41LDAsMzYuOSw3LjYsMzAuMywyNi4zCglDNzUuNyw1My4yLDMsNDksMi41LDk1LjljMCwyOC43LDI2LjksMzMuNSw0OS41LDMzLjVjMjQuMy0yLDQ2LjMtMi42LDczLjItMi42bDE0LTU0LjZjMC4xLTAuNCwwLjItMC45LDAuNC0xLjNjMCwwLjIsMCwwLjQsMCwwLjcKCWMtMS44LDM4LjMsMjcuNyw1Ni45LDY4LDU3LjZjMTMuNiwwLjQsMjguMy0xLjgsMzkuNy00LjJsNC4yLTE2YzExLjYsMTUuNywzNi4xLDIxLjcsNTYuNSwyMS42YzIzLTAuMiwzOS41LTkuMiw1NS42LTI1LjIKCWMwLjktMC45LDEuMy0zLjksMC4zLTUuMmMtMS4zLTEuNy0zLjUtMi40LTUuNS0wLjNjLTEwLjIsMTEuNS0yOS4xLDIwLjctNDQuNSwyMC40Yy0xOC41LTAuNi0zNS45LTkuOC0zOC41LTI5LjYKCWMtMC42LTUuNiwwLjMtMTMsMS4xLTIwYzctNS40LDMyLTUuMyw1Mi40LTUuOWMxOS40LTAuNSw0Ny4zLTYuMSw1OC4zLTIxLjFjLTcsMjctMTUuNyw1NS44LTIyLjgsODNoNDEuOWwxNC01My4xCgljNi4yLTIzLjEsMjMuOS0zOS4zLDQ3LjktMzguOUM0NzQuMSwzNC43LDQ4MC45LDM1LjksNDg3LjIsMzcuNXogTTYyLDEwOC44Yy0xMS40LDAtMjQuOS0xLjktMjQuOS0xNC45QzM3LDY4LDg1LDcyLDEwMiw3MgoJQzk2LjUsOTguNCw5MS44LDEwOC44LDYyLDEwOC44eiBNMzI3LjUsNTUuNGMtMTUuOCwyLTQwLjEsMS42LTQ3LjEsNWM5LjItMjUuMSwyOS43LTQ1LjgsNjEuMi01MC40YzEzLjQtMS44LDI3LjcsMS45LDI4LjcsMTgKCUMzNzAuOSw0My4zLDM0NS42LDUzLjIsMzI3LjUsNTUuNHogTTQ4OS4zLDExMC43YzAtMy44LTIuNi01LjQtOC01LjRoLTYuOHYxOS4yaDIuNnYtOC42aDQuOGw0LjIsOC42aDNsLTQuNC04LjgKCUM0ODcuNSwxMTUuMiw0ODkuMywxMTMuMiw0ODkuMywxMTAuN3ogTTQ4MC45LDExNC4yaC0zLjh2LTcuMmgzLjhjMy44LDAsNS44LDEsNS44LDMuNEM0ODYuNywxMTMuNCw0ODQuOSwxMTQuMiw0ODAuOSwxMTQuMnoKCSBNNDkyLjcsMTAzLjVjLTMuMi0zLjItNy40LTUtMTEuOC01Yy00LjYsMC04LjYsMS44LTExLjYsNC44Yy0zLjIsMy40LTUsNy42LTUsMTJjMCw0LjQsMS44LDguNCw0LjgsMTEuNmMzLjIsMy4yLDcuNCw1LDExLjgsNQoJYzQuNCwwLDguNi0xLjgsMTEuOC01YzMuMi0zLjIsNC44LTcuMiw0LjgtMTEuNkM0OTcuNSwxMTAuNyw0OTUuOSwxMDYuNSw0OTIuNywxMDMuNXogTTQ5MS41LDEyNS42Yy0yLjgsMi44LTYuOCw0LjQtMTAuNiw0LjQKCWMtNCwwLTcuOC0xLjYtMTAuNi00LjRjLTIuOC0yLjgtNC40LTYuNi00LjQtMTAuNGMwLTQsMS42LTcuOCw0LjQtMTAuOGMyLjgtMi44LDYuNi00LjQsMTAuNi00LjRjNCwwLDcuOCwxLjYsMTAuNiw0LjYKCWMyLjgsMi44LDQuNCw2LjQsNC40LDEwLjZDNDk1LjksMTE5LjIsNDk0LjMsMTIyLjgsNDkxLjUsMTI1LjZ6Ii8+Cjwvc3ZnPgo=">
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-4" data-image-width="420" data-image-height="135" src="data:image/svg+xml;base64,Cgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImFwcGxlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNDIwcHgiIGhlaWdodD0iMTM1cHgiIHZpZXdCb3g9IjAgMCA0MjAgMTM1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MjAgMTM1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBmaWxsPSIjMDA2NkIyIiBwb2ludHM9IjE4Mi43LDEzMS44IDE0OS4zLDEzMS44IDE3MC4yLDMuMyAyMDMuNiwzLjMgCQkiLz4KCQk8cGF0aCBmaWxsPSIjMDA2NkIyIiBkPSJNMTIxLjEsMy4zTDg5LjIsOTEuN2wtMy44LTE5bDAsMEw3NC4yLDE0LjljMCwwLTEuNC0xMS42LTE1LjktMTEuNkg1LjZMNSw1LjVjMCwwLDE2LjEsMy40LDM1LDE0LjcKCQkJbDI5LjEsMTExLjZoMzQuOUwxNTcuMSwzLjNIMTIxLjF6Ii8+CgkJPHBhdGggZmlsbD0iIzAwNjZCMiIgZD0iTTM4NC4zLDEzMS44SDQxNUwzODguMiwzLjNoLTI2LjljLTEyLjQsMC0xNS40LDkuNi0xNS40LDkuNkwyOTYsMTMxLjhoMzQuOWw3LTE5LjFoNDIuNUwzODQuMywxMzEuOHoKCQkJIE0zNDcuNSw4Ni4zTDM2NSwzOC4ybDkuOSw0OC4xSDM0Ny41eiIvPgoJCTxwYXRoIGZpbGw9IiMwMDY2QjIiIGQ9Ik0yOTguNiwzNC4ybDQuOC0yNy42YzAsMC0xNC43LTUuNi0zMC4xLTUuNmMtMTYuNiwwLTU2LDcuMy01Niw0Mi41YzAsMzMuMiw0Ni4zLDMzLjYsNDYuMyw1MQoJCQlzLTQxLjUsMTQuMy01NS4yLDMuM2wtNSwyOC44YzAsMCwxNC45LDcuMywzNy44LDcuM2MyMi44LDAsNTcuMy0xMS44LDU3LjMtNDRjMC0zMy40LTQ2LjctMzYuNS00Ni43LTUxCgkJCUMyNTEuNywyNC40LDI4NC4zLDI2LjMsMjk4LjYsMzQuMnoiLz4KCTwvZz4KCTxwYXRoIGZpbGw9IiNGOUE1MzMiIGQ9Ik04NS41LDcyLjZMNzQuMiwxNC45YzAsMC0xLjQtMTEuNi0xNS45LTExLjZINS42TDUsNS41YzAsMCwyNS4zLDUuMyw0OS43LDI0LjkKCQlDNzcuOSw0OS4yLDg1LjUsNzIuNiw4NS41LDcyLjZ6Ii8+CjwvZz4KPC9zdmc+Cg==">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

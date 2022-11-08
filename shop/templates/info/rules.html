@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Правила</title>
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/rules.css' %}" media="screen">
+{% endblock %}
+
+{% block SignIn %}
+        {{ user.login|default:"Регистрация/вход" }}
+{% endblock %}
+
+{% block cart %} {{ cart_count|default:"0" }} {% endblock %}
+
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-969c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Правила продажи товаров</h1>
+      </div>
+    </section>
+{% endblock %}

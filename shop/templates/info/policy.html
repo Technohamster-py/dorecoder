@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Политика конфиденциальности</title>
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/policy.css' %}" media="screen">
+{% endblock %}
+
+{% block SignIn %}
+    {% if user %}
+        {{ user.login }}
+    {% else %}
+        Регистрация/Вход
+    {% endif %}
+{% endblock %}
+
+{% block cart %} {{ cart_count }} {% endblock %}
+
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-5771">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Политика конфиденциальности</h1>
+      </div>
+    </section>
+{% endblock %}
+    

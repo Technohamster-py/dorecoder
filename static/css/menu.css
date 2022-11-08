@@ -1,0 +1,12 @@
+.catalog-menu li ul{
+  min-width: 150px;
+  display: none;
+}
+
+.catalog-menu li > ul li{
+  border: 1px solid #b3bec9;
+}
+
+.catalog-menu li:hover > ul{
+  
+}
